@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .header{
+    height: 140px;
+    padding: 30px;
+    background-color: rgb(234, 244, 52);
+    text-align: center;
+    color: white;
+    font-size: xx-large;
+    background-image:url(/pathway-to-fort.jpg);
+    background-size:cover;
+        }
+        *{
+            padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    scroll-behavior: smooth;
+    text-decoration:none;
+        }
+header{
+    height:80px;
+    width:1520px;
+    margin-right: 10px;
+    z-index: 1000;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    background-color: #0707070f;
+    padding: 30px 18%;
+    transition: ease .40s;
+
+}
+.logo{
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--text-color);
+    position: relative;
+    right: 100px;
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    color: var(--text-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+    padding:10px 22px;
+    border-radius: 4px;
+    transition: ease .40s;
+
+}
+.navbar a:hover{
+    background:var(--big-color);
+    color: var(--text-color);
+    box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.612);
+    border-radius: 4px;
+}
+#menu-icon{
+    color: var(--big-color);
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    position: absolute;
+}
+
+
+.search-container {
+    width: 100%;
+    max-width: 400px;
+    position:relative;
+    right:40px;
+}
+form {
+    position: relative;
+}
+
+input[type="text"] {
+    width: calc(100% - 40px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+}
+
+button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height:98%;
+    background-color: #007bff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+button i {
+    color: #fff;
+    font-size:20px;
+}
+
+/* Styling on focus */
+input[type="text"]:focus{
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+h1{
+   text-align: center;
+   position:relative;
+   top: 20px;
+
+}
+.sdiv{
+    background-color: rgb(221, 221, 221);
+    height: 280px;
+    width: 100%;
+    border-radius: 26px;
+    
+}
+
+.flex-container{
+    height: 500px;
+   display: flex;
+   justify-content: space-around;
+   background-color: rgba(236, 250, 255, 0.584);
+   
+}
+.flex-item{
+     
+      height: 450px;
+      border-radius: 15px;
+      width: 29%;
+    box-shadow: 13px 13px 25px rgba(6, 6, 6, 0.47);
+    
+}
+#flex-item1{
+    background-color: rgba(255, 255, 255, 0.515);
+    margin-top: 25px;
+    
+    
+}
+
+#flex-item2{
+    background-color:rgba(255, 255, 255, 0.515);
+    margin-top: 25px;
+}
+#flex-item3{
+    background-color: rgba(255, 255, 255, 0.515);
+    margin-top: 25px;
+}
+.button{
+    background-color: rgb(90, 171, 241);
+    padding: 17px;
+    border-radius: 25px;
+    position: relative;
+    left: 170px;
+    top:80px;
+    display: inline;
+}
+.p1{
+    height:210px;
+    position: relative;
+    left: 18px;
+    top:35px;
+    width:92%;
+    background-image: url(/bhaja_caves.jpg);
+    background-size: cover;
+}
+.p2{
+    height:210px;
+    position: relative;
+    left: 18px;
+    top:35px;
+    width:92%;
+    background-image: url(/narayani_dham.jpg);
+    background-size: cover;
+}
+.p3{
+    height:210px;
+    position: relative;
+    left: 18px;
+    top:35px;
+    width:92%;
+    background-image: url(/pathway-to-fort.jpg);
+    background-size: cover;
+}
+.p4{
+    height:210px;
+    position: relative;
+    left: 18px;
+    top:35px;
+    width:92%;
+    background-image: url(/Lion-Point.jpg);
+    background-size: cover;
+}
+.p5{
+    height:210px;
+    position: relative;
+    left: 18px;
+    top:35px;
+    width:92%;
+    background-image: url(/Pavana-Lake.jpg);
+    background-size: cover;
+}
+.p6{
+    height:210px;
+    position: relative;
+    left: 18px;
+    top:35px;
+    width:92%;
+    background-image: url(/ekvira-devi-temple.jpg);
+    background-size: cover;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Travel</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <div class="search-container">
+            <form action="#" method="GET">
+                <input type="text" name="search" id="search" placeholder="Search...">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+        <div class="navbar">
+            <a href="http://127.0.0.1:5500/index.html#">Home</a>
+            <a href="http://127.0.0.1:5500/hotels.html" target="main">Hotels & resorts</a>
+            <a href="#">Destination</a>
+            <a href="http://127.0.0.1:5500/about-us.html" target="main">Contact Us</a>
+
+        </div>
+    </header>
+    <div class="header">
+        <h1>Explore Your Next Destination</h1>
+    </div>
+  
+   <main>
+         
+        
+        <section>
+        <div class="flex-container" id="flex-container">
+            <div class="flex-item " id="flex-item1">
+                <h1 class="rl">bhaja Caves</h1>
+                <div class="p1"></div>
+                <div class="button"><a>Explore</a></div>
+            </div>
+            <div class="flex-item " id="flex-item1">
+                <h1 class="rl">Shree Narayani Dham</h1>
+                <div class="p2"></div>
+                <div class="button"><a>Explore</a></div>
+            </div>
+            <div class="flex-item " id="flex-item1">
+                <h1 class="rl">Lohagad Fort</h1>
+                <div class="p3"></div>
+                <div class="button"><a>Explore</a></div>
+            </div>
+
+        </div>
+    </section>
+    <section>
+        <div class="flex-container" id="flex-container">
+            <div class="flex-item " id="flex-item1">
+                <h1 class="rl">Lion's Point</h1>
+                <div class="p4"></div>
+                <div class="button"><a>Explore</a></div>
+            </div>
+            <div class="flex-item " id="flex-item1">
+                <h1 class="rl">Pavana Lake</h1>
+                <div class="p5"></div>
+                <div class="button"><a>Explore</a></div>
+            </div>
+            <div class="flex-item " id="flex-item1">
+                <h1 class="rl">Ekvira Devi Temple</h1>
+                <div class="p6"></div>
+                <div class="button"><a>Explore</a></div>
+            </div>
+
+        </div>
+    </section>
+
+
+    </main>
+</body>
+</html>

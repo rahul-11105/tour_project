@@ -1,0 +1,395 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    scroll-behavior: smooth;
+    text-decoration:none;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/*:root{
+    --big-color: #fff ;
+    --text-color: #221314;
+    --second-color: #5a7184;
+    --main-color: #6e54fa;
+    --big-font: 6rem;
+    --h2-font:3rem;
+    --p-font:1.1rem;
+
+}
+body{
+    background:var(--big-color);
+    color: var(--text-color);
+}*/
+header{
+    height:80px;
+    width:1520px;
+    margin-right: 10px;
+    z-index: 1000;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    background-color: #0707070f;
+    padding: 30px 18%;
+    transition: ease .40s;
+
+}
+.logo{
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--text-color);
+    position: relative;
+    right: 100px;
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    color: var(--text-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+    padding:10px 22px;
+    border-radius: 4px;
+    transition: ease .40s;
+
+}
+.navbar a:hover{
+    background:var(--big-color);
+    color: var(--text-color);
+    box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.612);
+    border-radius: 4px;
+}
+#menu-icon{
+    color: var(--big-color);
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    position: absolute;
+}
+
+
+.search-container {
+    width: 100%;
+    max-width: 400px;
+    position:relative;
+    right:40px;
+}
+form {
+    position: relative;
+}
+
+input[type="text"] {
+    width: calc(100% - 40px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+}
+
+button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height:98%;
+    background-color: #007bff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+button i {
+    color: #fff;
+    font-size:20px;
+}
+
+/* Styling on focus */
+input[type="text"]:focus{
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+/*.search_bar{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: transparent;
+    width:450px;
+    position: relative;
+    right: 50px;
+
+}
+
+select{
+    width: 10%;
+    height: 100%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border:2px solid black;
+    border-right:1px solid black;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    color: #0F1111;
+    background-color: #d3d3d373;
+}
+input{
+    border:2px solid black;
+    border-left:0px transparent;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    height:100%;
+    width:90%;
+    font-size:15px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: oblique;
+    font-weight: 400;
+    background-color: #efefef88;
+}*/
+.hero-img{
+    height: 500px;
+    width: 1300px;
+    position:relative;
+    left: 120px;
+    border-radius: 15px;
+    background-image: url(/hero_img.webp);
+    background-size: cover;
+}
+.hero-img h1{
+    display: inline-block;
+    position: relative;
+    left:320px;
+    top:80px;
+    font-size:40px;
+    line-height: 100px;
+    font-weight: 300;
+}
+.sub-hero{
+    position:relative;
+    left: 200px;
+    bottom:150px;
+    height:300px;
+    width:75%;
+    border-radius: 10px;
+    background-color: #ffffffb4;
+    filter:opacity(75%);
+    /*0filter: blur(5px);*/    
+    box-shadow: 5px 10px 30px rgb(0, 0, 0);
+}
+.map{
+    height:200px;
+    width: 300px;
+    background-color: black;
+    display:inline-block;
+    position:absolute;
+    top: 150px;
+    right:200px;
+    background-image:url(/staticmap.png);
+    background-size: cover;
+    border-radius: 15px;
+}
+.map .view{
+    height:70px;
+    width: 100%;
+    background-color:white;
+    
+    position:absolute;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.view a{
+    color:rgb(56, 119, 255);
+    font-weight: 500;
+    font-size: large;
+}
+.view a:hover{
+    text-decoration: underline;
+}
+.spots{
+
+    position:absolute;
+    background-color:transparent;
+    top: 400px;
+    left: 200px;
+    height:300px;
+    width:75%;
+    border-radius: 10px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.spots .img{
+    position: relative;
+    top: 70px;
+    height:120px;
+    width: 18%;
+    margin:20px 20px;
+    filter: opacity(100%);
+    background-color: #0F1111;
+    border-radius: 8px;
+
+}
+.offer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    left: 10px;
+    bottom: 80px;
+}
+
+.content{
+    position: relative;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    left: 240px;
+    height:400px;
+    width:70%;
+    background-color:transparent;
+    margin-right: 10px;
+    margin-left:4px;
+}
+.cdiv{
+    height:450px;
+    width:25%;
+    background-color:transparent;
+    background-size: cover;
+    margin-left: 20px;
+    background-size: cover;
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius:15px;
+}
+
+#div1{
+    height:350px;
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-image:url(/orchid.avif);
+    background-size:contain;
+    position: relative;
+    top: 10px;
+}
+#div3{
+    height:350px;
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-image:url(/trios.jpg);
+    background-size:contain;
+    position: relative;
+    top: 10px;
+}
+#div2{
+    height:350px;
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-image:url(/meritas\ adore.jpg);
+    background-size:contain;
+    position: relative;
+    top: 10px;
+}
+#div4{
+    height:350px;
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-image:url(/Luxury\ villa.avif);
+    background-size:contain;
+    position: relative;
+    top: 10px;
+}
+.cdiv span{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+span p{
+    background-color: rgb(188, 232, 232);
+    padding: 7px 5px 5px 5px ;
+    border-radius: 15px;
+    height:40px;
+    width:100px;
+    justify-content: center;
+}
+.more{
+    margin-top:20PX;
+    position: relative;
+    border-radius:15px;
+    left: 150px;
+    height: 30px;
+    width: 80px;
+    background-color: #0F1111;
+    color: white;
+}
+.more a{
+    position: absolute;
+    text-decoration: none;
+    top: 7px;
+    left:13px;
+    font-weight: 100;
+    font-size: small;
+    color: aliceblue;
+}
+.Info{
+    position:absolute;
+    top:275px;
+    width: 245px;
+    height: 100px;
+    background-color:white;
+    filter: opacity(60%);
+}
+section{
+    height: 200px;
+    width:100%;
+    background-color: #ccc;
+    position: relative;
+    top: 50px;
+}
+footer{
+    background-color:rgb(222, 220, 222);
+    width:1520px;
+    height:580px;
+    margin-right: 10px;
+    margin-top:100px;
+    margin-left:4px;
+    color: #383838;
+    text-align: center;
+}
+footer a {
+    color: #070707;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.footer-section {
+    padding-top:10px;
+    margin-bottom: 20px;
+}
+#foot-logo{
+    padding-top:40px;
+}
+
+.footer-logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    font-size: 1em;
+}
